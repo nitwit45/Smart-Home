@@ -6,22 +6,22 @@
   cursor: pointer;
   border: 1px solid transparent;
   transition: all 0.4s ease-in-out;
-  background-color: #121220;
+  background-color: #252525;
 }
 
-.FeatureCard > .title {
+.FeatureCard>.title {
   margin-top: 20px;
   font-weight: bold;
 }
 
-.FeatureCard > .status {
+.FeatureCard>.status {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.FeatureCard > .status > .button {
+.FeatureCard>.status>.button {
   width: 40px;
   height: 25px;
   border-radius: 50px;
@@ -29,7 +29,7 @@
   cursor: pointer;
 }
 
-.FeatureCard > .status > .button > .circle {
+.FeatureCard>.status>.button>.circle {
   height: 25px;
   width: 25px;
   margin-left: 20px;
@@ -38,16 +38,15 @@
   transition: all 0.5s ease-in-out;
 }
 
-.FeatureCard[is-active="false"] > .status > .button {
+.FeatureCard[is-active="false"]>.status>.button {
   background-color: #8a90b8;
 }
 
-.FeatureCard[is-active="false"] > .status > .button > .circle {
+.FeatureCard[is-active="false"]>.status>.button>.circle {
   margin-left: -5px;
 }
 
 .FeatureCard[is-active="false"] {
-  background-color: transparent;
   filter: grayscale(100%);
   opacity: 0.7;
   box-shadow: none !important;
